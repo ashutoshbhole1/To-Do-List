@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Pankh Play",
+    "slug": "pankhplay",
+    "version": "1.0.0",
+    "backgroundColor": "#000000",
+    "primaryColor": "#BFFF00",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "android": {
+      "package": "com.pankhplay.app",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "READ_MEDIA_AUDIO"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "54bd1bd5-2e0b-40d1-a35d-299a9b117202"
+      }
+    }
+  }
+}

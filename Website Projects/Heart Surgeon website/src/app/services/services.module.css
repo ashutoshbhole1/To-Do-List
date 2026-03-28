@@ -1,0 +1,100 @@
+.header {
+  text-align: center;
+  padding: 4rem 0 3rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text-color), var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.servicesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.serviceCard {
+  padding: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px var(--shadow-color);
+}
+
+.serviceCard h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.serviceCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.benefitsList li {
+  position: relative;
+  padding-left: 1.8rem;
+  opacity: 0.85;
+}
+
+.benefitsList li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  top: -2px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .benefitsList {
+    grid-template-columns: 1fr;
+  }
+  .serviceCard {
+    padding: 2rem;
+  }
+}

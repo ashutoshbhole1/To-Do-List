@@ -1,0 +1,12 @@
+android
+ios
+node_modules
+.expo
+.git
+build
+.gradle
+*.apk
+*.aab
+*.mp3
+*.wav
+*.flac

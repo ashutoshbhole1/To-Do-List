@@ -1,0 +1,186 @@
+:root {
+  --bg-color: #f0f4f8;
+  --text-color: #1e293b;
+  --primary-color: #2563eb;
+  --secondary-color: #7c3aed;
+  --tertiary-color: #0ea5e9;
+  --primary-light: #e0e7ff;
+  
+  /* Ultra Premium Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+  --glass-inset: inset 0 2px 4px rgba(255, 255, 255, 0.8);
+  
+  --shadow-color: rgba(0, 0, 0, 0.08);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+[data-theme='dark'] {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --primary-color: #3b82f6;
+  --secondary-color: #a78bfa;
+  --tertiary-color: #38bdf8;
+  --primary-light: #1e1b4b;
+  
+  /* Dark Mode Ultra Premium Glassmorphism */
+  --glass-bg: rgba(15, 23, 42, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  --glass-inset: inset 0 2px 8px rgba(255, 255, 255, 0.05);
+  
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Complex Premium Mesh Gradient */
+  background-color: var(--bg-color);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(124, 58, 237, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(59, 130, 246, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-color);
+  font-family: var(--font-sans);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Stunning Glassmorphism Classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-panel::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ensure content is above glass highlight */
+.glass-panel > * {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.5);
+}
+
+.btn-secondary {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* Page Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Global Animations */
+@keyframes globalFadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes globalZoomIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: globalFadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-1 {
+  opacity: 0;
+  animation: globalFadeInUp 0.8s ease-out forwards 0.2s;
+}
+
+.animate-fade-in-up-delay-2 {
+  opacity: 0;
+  animation: globalFadeInUp 0.8s ease-out forwards 0.4s;
+}
+
+.animate-zoom-in {
+  opacity: 0;
+  animation: globalZoomIn 0.8s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+}

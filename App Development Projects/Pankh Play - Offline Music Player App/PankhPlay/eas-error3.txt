@@ -1,0 +1,18 @@
+﻿
+Builds for @ashuexpert/pankhplay:
+
+ID                       e2d734cd-01eb-4c51-a1b4-a83acc5fc6e9
+Platform                 Android
+Status                   errored
+Profile                  preview
+Distribution             internal
+SDK Version              55.0.0
+Version                  1.0
+Version code             1
+Commit                   864db678fbb5069f173c7164250028966911199d
+Logs                     https://expo.dev/accounts/ashuexpert/projects/pankhplay/builds/e2d734cd-01eb-4c51-a1b4-a83acc5fc6e9
+Application Archive URL  null
+Build Artifacts URL      null
+Started at               26/2/2026, 11:51:41 pm
+Finished at              26/2/2026, 11:53:26 pm
+Started by               ashuexpert

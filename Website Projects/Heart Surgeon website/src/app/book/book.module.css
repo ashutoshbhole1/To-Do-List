@@ -1,0 +1,158 @@
+.header {
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text-color), var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 800px;
+  padding: 3rem;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.formGroup input, 
+.formGroup select, 
+.formGroup textarea {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.formGroup input:focus, 
+.formGroup select:focus, 
+.formGroup textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.radioGroup {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.radioLabel input[type="radio"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--primary-color);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.errorBox {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.successCard {
+  text-align: center;
+  padding: 4rem 3rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.successCard h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.followUpText {
+  margin: 1.5rem 0 2.5rem 0;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  .formCard {
+    padding: 2rem 1.5rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .radioGroup {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

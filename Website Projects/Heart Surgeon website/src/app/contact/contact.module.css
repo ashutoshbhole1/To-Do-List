@@ -1,0 +1,145 @@
+.header {
+  text-align: center;
+  padding: 4rem 0 3rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text-color), var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.contactContainer {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.infoCard, .formCard {
+  flex: 1;
+  padding: 3rem;
+}
+
+.infoCard h2, .formCard h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.infoItem {
+  margin-bottom: 2rem;
+}
+
+.infoItem h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.infoItem p {
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.infoItem a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.infoItem a:hover {
+  text-decoration: underline;
+}
+
+.whatsappBtn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none !important;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.whatsappBtn:hover {
+  opacity: 0.9;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.formGroup input, .formGroup textarea {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.mapContainer {
+  padding-bottom: 5rem;
+}
+
+.mapTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mapWrapper {
+  overflow: hidden;
+  padding: 10px;
+  height: 420px;
+}
+
+.mapWrapper iframe {
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .contactContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .infoCard, .formCard {
+    padding: 2rem;
+  }
+}
